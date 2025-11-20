@@ -3,11 +3,11 @@
 #include <ArduinoJson.h>
 
 // Thông tin WiFi
-const char* ssid = "Viet Tho";
-const char* password = "987654321";
+const char* ssid = "";
+const char* password = "";
 
 // URL data.php trên server local
-const char* serverUrl = "http://192.168.2.21/smartbox/data.php"; // thay IP/đường dẫn phù hợp
+const char* serverUrl = ""; // thay IP/đường dẫn phù hợp
 
 void setup() {
   Serial.begin(115200);
