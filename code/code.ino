@@ -20,8 +20,8 @@ RTC_DS3231 rtc;
 #define BUZZER_PIN 18   // bạn có thể đổi sang chân khác phù hợp ESP32
 #define MODE_BUTTON 0
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-const char* pushoverToken = "amejqgya25b3ynjd8p2thwphh7vjnz";
-const char* pushoverUser = "uf9382era3gv64ueuoptsk656g6wo9";
+const char* pushoverToken = "";
+const char* pushoverUser = "";
 Servo servo[2];
 bool statusComp[2] = {false, false};
 int k=0;
@@ -101,9 +101,9 @@ class Compartment {
 };
 
 // =================== WiFi + Server ===================
-const char* ssid = "Viet Tho";
-const char* password = "987654321";
-const char* serverUrl = "http://192.168.2.21/smartbox/data.php";
+const char* ssid = "";
+const char* password = "";
+const char* serverUrl = "";
 
 // =================== Mảng 6 ngăn thuốc ===================
 Compartment com[6];
